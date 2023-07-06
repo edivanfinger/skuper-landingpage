@@ -14,7 +14,7 @@
             if (sParameterName[0] == "code") 
             {
                 let f = sParameterName[1]
-                let a = "intent:#Intent;scheme=skuper://sso?code=$f;package=efsystems.star;end"
+                let a = "intent:#Intent;scheme=skuper://sso?code="+f+";package=efsystems.star;end"
                 return a;
             }
         }
