@@ -31,6 +31,18 @@
     }
     a.disabled {
         pointer-events: none;
+      
+        background-color: #f44336;
+        /* cor de fundo do botão */
+        color: white;
+        /* cor da letra do botão */
+        padding: 15px 25px;
+        /* espaçamento interno do botão */
+        text-align: center;
+        /* alinhamento do texto do botão */
+        text-decoration: none;
+        /* remoção do sublinhado do link */
+        display: inline-block;
     }
 
     .container {
@@ -56,21 +68,6 @@
       margin: 20px;
     }
 
-    button {
-      background-color: #f44336;
-      /* cor de fundo do botão */
-      color: white;
-      /* cor da letra do botão */
-      padding: 15px 25px;
-      /* espaçamento interno do botão */
-      text-align: center;
-      /* alinhamento do texto do botão */
-      text-decoration: none;
-      /* remoção do sublinhado do link */
-      display: inline-block;
-      /* exibição do botão como um bloco em linha */
-    }
-
     @media (max-width: 480px) {
       .logo {
         width: 150px;
@@ -93,7 +90,7 @@
           alt="Disponível no Google Play" width="200" height="60">
       </a>
     </div>
-    <button><a disabled="true" href = "intent:#Intent;scheme=skuper://sso?code=${GetURLParameter()};package=efsystems.star;end">Acesar App!</a></button>
+    <a disabled="true" href = "intent:#Intent;scheme=skuper://sso?code=${GetURLParameter()};package=efsystems.star;end">Acesar App!</a>
   </div>
 </body>
 
