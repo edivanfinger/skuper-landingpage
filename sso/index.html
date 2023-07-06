@@ -13,8 +13,8 @@
             console.log(sParameterName)
             if (sParameterName[0] == "code") 
             {
-                val f = sParameterName[1]
-                val a = "intent:#Intent;scheme=skuper://sso?code=$f;package=efsystems.star;end"
+                let f = sParameterName[1]
+                let a = "intent:#Intent;scheme=skuper://sso?code=$f;package=efsystems.star;end"
                 return a;
             }
         }
