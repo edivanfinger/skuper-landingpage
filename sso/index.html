@@ -2,7 +2,7 @@
 
 <head>
   <script>
-    function GetURLParameter(sParam) {
+    document.getElementById("btn").onclick = function () {
       var sPageURL = window.location.search.substring(1);
       var sURLVariables = sPageURL.split('?');
       console.log(sPageURL)
@@ -12,9 +12,7 @@
         console.log(sParameterName)
         if (sParameterName[0] == "code") {
           let f = sParameterName[1]
-          document.getElementById("btn").onclick = function () {
-            location.href = "skuper://sso?code=" + f
-          }
+          location.href = "skuper://sso?code=" + f
         }
       }
     };
