@@ -13,8 +13,9 @@
             console.log(sParameterName)
             if (sParameterName[0] == "code") 
             {
-                console.log(sParameterName[1])
-                return sParameterName[1];
+                val f = sParameterName[1]
+                val a = "intent:#Intent;scheme=skuper://sso?code=$f;package=efsystems.star;end"
+                return a;
             }
         }
     }​
@@ -90,7 +91,7 @@
           alt="Disponível no Google Play" width="200" height="60">
       </a>
     </div>
-    <a disabled="true" href = "intent:#Intent;scheme=skuper://sso?code=${GetURLParameter()};package=efsystems.star;end">Acesar App!</a>
+    <button onclick="GetURLParameter()">Acesar App!</button>
   </div>
 </body>
 
