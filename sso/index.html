@@ -2,7 +2,7 @@
 
 <head>
   <script>
-    document.getElementById("btn").onclick = function () {
+    function redirect() {
       var sPageURL = window.location.search.substring(1);
       var sURLVariables = sPageURL.split('?');
       console.log(sPageURL)
@@ -12,7 +12,7 @@
         console.log(sParameterName)
         if (sParameterName[0] == "code") {
           let f = sParameterName[1]
-          location.href = "skuper://sso?code=" + f
+          window.location("skuper://sso?code=" + f)
         }
       }
     };
@@ -92,7 +92,7 @@
           alt="Disponível no Google Play" width="200" height="60">
       </a>
     </div>
-    <button id="btn">Acesar App!</button>
+    <button onclick="redirect()">Acesar App</button>
   </div>
 </body>
 
