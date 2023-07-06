@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.efsystems.skuper",
+      "sha256_cert_fingerprints": [
+        "A9:CF:06:4D:14:23:60:CB:10:65:25:67:0A:C6:9C:54:11:F8:8F:77:4F:A4:47:5E:2C:BC:66:BF:BC:3C:05:BB"
+      ]
+    }
+  }
+]
