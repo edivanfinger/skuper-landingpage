@@ -2,10 +2,18 @@
 
 <head>
   <script>
-    function launchAppOnAppleDevice() {
-      const url = "com.efsystems.skuper://www.efsystems-skuper.com/sso?code=mz4kwbeCV0Ok3EfukRTd4fZYZ9c2";
-      window.location.replace(url);
-    }
+    function GetURLParameter(sParam){
+        var sPageURL = window.location.search.substring(1);
+        var sURLVariables = sPageURL.split('&');
+        for (var i = 0; i < sURLVariables.length; i++) 
+        {
+            var sParameterName = sURLVariables[i].split('=');
+            if (sParameterName[0] == sParam) 
+            {
+                return sParameterName[1];
+            }
+        }
+    }​
   </script>
   <style>
     * {
@@ -78,7 +86,7 @@
           alt="Disponível no Google Play" width="200" height="60">
       </a>
     </div>
-    <button onclick="location.href = 'com.efsystems.skuper://www.efsystems-skuper.com/.well-known/assetlinks.json';">Acessa o app !!!</button>
+    <button onclick="location.href = 'skuper://efsystems/sso?code=${GetURLParameter('code')}';">Entrar no app</button>
   </div>
 </body>
 
