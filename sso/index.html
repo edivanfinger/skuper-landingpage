@@ -29,6 +29,9 @@
       font-family: Arial, sans-serif;
       background-color: #0D47A1;
     }
+    a.disabled {
+        pointer-events: none;
+    }
 
     .container {
       max-width: 600px;
@@ -90,7 +93,7 @@
           alt="Disponível no Google Play" width="200" height="60">
       </a>
     </div>
-    <button onclick="location.href = 'intent:#Intent;scheme=skuper://sso?code=${GetURLParameter()};package=efsystems.star;end">Acesar App!</button>
+    <button><a disabled="true" href = "intent:#Intent;scheme=skuper://sso?code=${GetURLParameter()};package=efsystems.star;end">Acesar App!</a></button>
   </div>
 </body>
 
