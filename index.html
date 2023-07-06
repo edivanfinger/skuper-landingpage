@@ -12,37 +12,53 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
-.error {
-  color: white;
-  font-size: 5rem;
+.logo {
+  width: 200px;
 }
 
-.message {
+h1 {
   color: white;
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 .button {
   display: inline-block;
-  margin-top: 2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #34A853;
+  color: white;
+  font-size: 16px;
 }
 
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="error">404</div>
-<div class="message">Página não encontrada</div>
-<a href="https://play.google.com/store/apps/details?id=com.efsystems.skuper" class="button">
-<img src="https://play.google.com/intl/en_us/badges/static/images/badges/pt-br_badge_web_generic.png" alt="Disponível no Google Play" width="200">
-</a>
+<img src="https://skuper.app/logo.png" alt="Logo do Skuper" class="logo">
+<h1>O Skuper ainda não está instalado no seu dispositivo.</h1>
+<a href="https://play.google.com/store/apps/details?id=com.efsystems.skuper" class="button">Baixe agora na Play Store</a>
 </div>
 </body>
 </html>
+
